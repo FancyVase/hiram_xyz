@@ -13,10 +13,12 @@ $(document).ready(function() {
 		}
 	});
 
-	$('.arrow').click(function() {
-		$('html', 'body').animate({
-			scrollTop: $("#about-me").offset().top
-		}, 2000);
+	$('a[href^="#"]').click(function(e) {
+		$('html, body').animate({
+			scrollTop: $(this.hash).offset().top}, 
+			1000);
+		return false;
+		e.preventDefault();
 	});
 
 });

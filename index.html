@@ -4,6 +4,8 @@
 	<title>Hiram Moncivais</title>
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<script type="text/javascript" src="js/paper-full.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
 	<script type="text/paperscript" canvas="space">
     // The amount of symbol we want to place;
     var count = 150;
@@ -33,7 +35,7 @@
 
     function onMouseMove(event) {
         mouseVector = view.center - event.point;
-        mouseVector /= 5;
+        mouseVector /= 20;
     }
 
     // The onFrame function is called up to 60 times a second:

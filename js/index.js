@@ -10,4 +10,8 @@ $(document).ready(function() {
 			$('.arrow').show();
 		}
 	});
+
+	$('arrow').click(function() {
+		window.open('http://google.com', '_blank');
+	});
 });

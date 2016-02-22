@@ -1,0 +1,52 @@
+html, body {
+	height: 100%;
+	margin: 0px;
+}
+
+header {
+	height: 100vh;
+	margin-bottom: 50px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	text-align: center;
+	color: white;
+	font-family: Helvetica;
+	font-weight: 100;
+}
+header h1 {
+	font-weight: 100;
+	font-size: 4em;
+}
+header h2 {
+	font-weight: 100;
+	font-size: 1.5em;
+}
+
+canvas {
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	z-index: -1;
+}
+
+#projects {
+	height: 50vh;
+	background-color: white;
+}
+
+}

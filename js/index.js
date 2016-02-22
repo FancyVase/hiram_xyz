@@ -1,17 +1,22 @@
 $(document).ready(function() {
-	var offset = $('header').height() + 100;
+	var offset = $('#header').height();
+	console.log(offset);
 
 	$('.arrow').show();
 
 	$(window).scroll(function() {
-		if ($(window).scrollTop() > offset) {
+		console.log($(window).scrollTop())
+		if ($(window).scrollTop() > 80) {
 			$('.arrow').hide();
 		} else {
 			$('.arrow').show();
 		}
 	});
 
-	$('arrow').click(function() {
-		window.open('http://google.com', '_blank');
+	$('.arrow').click(function() {
+		$('html', 'body').animate({
+			scrollTop: $("#about-me").offset().top
+		}, 2000);
 	});
+
 });

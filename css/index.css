@@ -227,6 +227,22 @@ hr {
 	}
 }
 
+.more {
+	text-align: center;
+}
+.more-link {
+	background-color: #fff;
+	color: #76608A;
+	border: 2px solid #76608A;
+	padding: 10px 40px;
+	transition: 0.25s;
+}
+
+.more-link:hover {
+	color: #fff;
+	background-color: #76608A;
+}
+
 /* ----------------- DESIGN ------------------*/
 
 #design {

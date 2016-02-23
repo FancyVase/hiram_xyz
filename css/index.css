@@ -181,9 +181,9 @@ canvas {
 /* ----------------- HACK ------------------*/
 
 .section {
-	background-color: white;
+	background-color: #ECF0F1;
 	padding: 75px 0px;
-	border-bottom: #e1e1e1 1px solid;
+	border-bottom: #76608A 1px solid;
 }
 
 .row {
@@ -231,7 +231,7 @@ hr {
 	text-align: center;
 }
 .more-link {
-	background-color: #fff;
+	background-color: #ECF0F1;
 	color: #76608A;
 	border: 2px solid #76608A;
 	padding: 10px 40px;
@@ -239,7 +239,7 @@ hr {
 }
 
 .more-link:hover {
-	color: #fff;
+	color: #ECF0F1;
 	background-color: #76608A;
 }
 

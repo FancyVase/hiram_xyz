@@ -9,6 +9,12 @@ $(document).ready(function() {
 		} else {
 			$('.arrow').show();
 		}
+
+		if ($(window).scrollTop() < $('.subheading').offset().top) {
+	    	$('.nav').removeClass('nav-down').addClass('nav-up');
+	    } else {
+	    	$('.nav').removeClass('nav-up').addClass('nav-down');
+	    }
 	});
 
 	$('a[href^="#"]').click(function(e) {
@@ -18,5 +24,4 @@ $(document).ready(function() {
 		return false;
 		e.preventDefault();
 	});
-
 });

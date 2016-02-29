@@ -13,6 +13,32 @@ h1 {
 	margin: 0px;
 }
 
+.nav {
+	padding: 20px 0px;
+	color: white;
+	position: fixed;
+	top: 0;
+	transition: top 0.2s ease-in-out;
+	width: 100%;
+	text-align: center;
+	font-weight: 100;
+	font-size: 1.5em;
+	background-color: #76608A;
+}
+
+.nav a {
+	color: #fff;
+	transition: 0.25s;
+}
+
+.nav a:hover {
+	color: rgb(186,167,203);
+}
+
+.nav-up {
+	top: -80px;
+}
+
 header {
 	height: 100vh;
 	margin-bottom: 50px;
@@ -47,7 +73,6 @@ header {
 .subheading {
 	font-weight: 100;
 	font-size: 1.5em;
-	background-color: black;
 }
 
 a {
@@ -156,14 +181,12 @@ canvas {
 }
 
 #about-me {
-	/*height: 75vh;*/
 	background-color: rgba(255,255,255,0.95);
-	/*background: url('https://images.unsplash.com/photo-1430263326118-b75aa0da770b?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=aa7842609df3986db798c15162e01aeb');*/
 	background-repeat: no-repeat;
 	background-position: center bottom;
 	background-size: cover;
 	text-align: center;
-	padding: 75px 50px;
+	padding: 120px 50px;
 	border-bottom: #76608A 1px solid;
 }
 
@@ -182,7 +205,7 @@ canvas {
 
 .section {
 	background-color: rgba(255,255,255,0.95);
-	padding: 75px 0px;
+	padding: 120px 0px;
 	border-bottom: #76608A 1px solid;
 }
 

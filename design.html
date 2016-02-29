@@ -1,31 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Capture | Hiram Moncivai</title>
+	<title>Design | Hiram Moncivais</title>
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:100,200,300,400"/>
 	<link rel="stylesheet" type="text/css" href="css/capture.css">
 </head>
 <body>
-	<ul id="tiles">
-		<li><img src="https://c2.staticflickr.com/2/1566/24909769440_6d435c7bf5.jpg"><p>1</p></li>
-		<li><img src="https://c2.staticflickr.com/2/1658/25112174581_671a280fb1.jpg"><p>2</p></li>
-		<li><img src="https://c2.staticflickr.com/2/1527/25087146732_3a3bc17f77.jpg"><p>3</p></li>
-		<li><img src="https://c2.staticflickr.com/2/1626/25205402875_02f62a5d71.jpg"><p>4</p></li>
-		<li><img src="https://c2.staticflickr.com/2/1476/24837736349_d071982a4e.jpg"><p>5</p></li>
-		<li><img src="https://c2.staticflickr.com/2/1670/24909789830_186d2e218c.jpg"><p>6</p></li>
-		<li><img src="https://c2.staticflickr.com/2/1443/24574764174_2fe6955d4d.jpg"><p>7</p></li>
-		<li><img src="https://c2.staticflickr.com/2/1629/25112197751_b3679e574a.jpg"><p>8</p></li>
-	</ul>
+	<div class="heading">Design</div>
 
-	<script type="text/javascript">
-	$(document).ready(new function() {
-	// Call the layout function.
-	$('#tiles li').wookmark({
-		autoResize: true, // This will auto-update the layout when the browser window is resized.
-		container: $('#tiles'), // Optional, used for some extra CSS styling
-		offset: 2, // Optional, the distance between grid items
-		itemWidth: 210 // Optional, the width of a grid item
-	});
-});
-	</script>
+	<div class="grid">
+		<div class="grid-sizer">
+			<div class="grid-item">
+				<img src="img/design/sunset.png" />
+			</div>
+			<div class="grid-item">
+				<img src="img/design/chaos.jpg" />
+			</div>
+			<div class="grid-item">
+				<img src="img/design/busa-boba.png" />
+			</div>
+			<div class="grid-item">
+				<img src="img/design/ap-bio.jpg" />
+			</div>
+			<div class="grid-item">
+				<img src="img/design/technique.png" />
+			</div>
+			<div class="grid-item">
+				<img src="img/design/tnq-events-2015.jpg" />
+			</div>
+			<div class="grid-item">
+				<img src="img/design/tnq-preorder-2015.jpg" />
+			</div>
+			<div class="grid-item">
+				<img src="img/design/union-de-fronteras.png" />
+			</div>
+			<div class="grid-item">
+				<img src="img/design/tnq-preorder-2016.jpg" />
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+	<script type="text/javascript" src="https://npmcdn.com/masonry-layout@4.0.0/dist/masonry.pkgd.min.js"></script>
+	<script type="text/javascript" src="http://imagesloaded.desandro.com/imagesloaded.pkgd.min.js"></script>
+	<script type="text/javascript" src="js/capture.js"></script>
 </body>
 </html>

@@ -1,11 +1,54 @@
-html, body {
-	height: 100%;
-	margin: 0px;
-	font-family: Lato;
+* { box-sizing: border-box; }
+
+/* force scrollbar */
+html { overflow-y: scroll; }
+
+body { font-family: Lato; }
+
+.heading { 
+	color: #76608A;
+	text-align: center;
+	font-size: 3em;
+	margin: 30px 0px;
 }
 
-#tiles>img {
+.grid {
+	background: #fff;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.grid:after {
+	content: '';
 	display: block;
-	width: 200px;
-	height: auto;
+	clear: both;
+}
+
+.grid-sizer,
+.grid-item {
+	width: 33.333%;
+}
+
+.grid-item {
+	float: left;
+	padding: 5px;
+}
+
+.grid-item img {
+	display: block;
+	max-width: 100%;
+	transition: 0.25s;
+}
+
+.grid-item img:hover {
+	opacity: 0.9;
+}
+
+@media (max-width: 800px) {
+	.grid { width: 90%; }
+	.grid-sizer, .grid-item { width: 50%; }
+}
+
+@media (max-width: 550px) {
+	.grid-sizer, .grid-item { width: 100%; }
 }

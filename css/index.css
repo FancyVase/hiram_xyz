@@ -14,6 +14,7 @@ h1 {
 }
 
 .nav {
+	z-index: 10;
 	padding: 20px 0px;
 	color: white;
 	position: fixed;
@@ -176,12 +177,15 @@ canvas {
 }
 /* ----------------- ABOUT ME ------------------*/
 
-.mauve {
-	color: #76608A;
-}
+.mauve { color: #76608A; }
+
+.black { color: #000; }
+
+.white { color: #fff; }
 
 #about-me {
-	background-color: rgba(255,255,255,0.95);
+	background-color: rgba(255,255,255,1);
+	background-color: #e1e1e1;
 	background-repeat: no-repeat;
 	background-position: center bottom;
 	background-size: cover;
@@ -207,16 +211,19 @@ canvas {
 	padding: 120px 0px;
 }
 
+.section-dark {
+	background-color: rgba(20,20,20,0.95);
+}
+
 .row {
 	padding: 3%;
 }
 
 .content-heading {
-	background-color: #fff;
 	text-align: center;
 	font-size: 4em;
+	font-weight: 300;
 	padding: 10px 0px;
-	/*margin-bottom: 10px;*/
 }
 
 .item {
@@ -237,15 +244,34 @@ canvas {
 	opacity: 0.85;
 }
 
-.item-name { transition: 0.5s; }
+.item-name { 
+	font-weight: 400;
+	color: #76608A;
+	transition: 1s; 
+}
+
+.item-dark {
+	color: #76608A;
+	transition: 0.5s;
+}
 
 .item-name>a:hover {
-	color: #000;
+	color: #76608A;
+}
+
+.item-dark>a { transition: 0.1s;}
+
+.item-dark>a:hover {
+	color: #76608A;
 }
 
 hr {
 	margin: 10px auto;
 	width: 75%;
+}
+
+hr.dark {
+	border-top: 1px solid rgba(50,50,50,1);
 }
 
 @media (max-width: 900px) {
@@ -263,20 +289,19 @@ hr {
 	text-align: center;
 }
 .more-link {
-	background-color: #ECF0F1;
+	background-color: #F3F3F3;
 	color: #76608A;
 	border: 2px solid #76608A;
 	padding: 10px 40px;
 	transition: 0.25s;
 }
 
-.more-link:hover {
-	color: #ECF0F1;
-	background-color: #76608A;
+.more-link-dark {
+	background-color: #131313;
+
 }
 
-/* ----------------- DESIGN ------------------*/
-
-#design {
-
+.more-link:hover {
+	color: #F3F3F3;
+	background-color: #76608A;
 }

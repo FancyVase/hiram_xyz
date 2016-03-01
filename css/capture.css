@@ -3,7 +3,11 @@
 /* force scrollbar */
 html { overflow-y: scroll; }
 
-body { font-family: Lato; margin: 0;}
+body { 
+	font-family: Lato; 
+	margin: 0;
+	background-color: #ddd;
+}
 
 .nav {
 	z-index: 10;
@@ -43,7 +47,7 @@ a {
 }
 
 .grid {
-	background: #fff;
+	background: #DDD;
 	width: 80%;
 	margin: 0 auto;
 }

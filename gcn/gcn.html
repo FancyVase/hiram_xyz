@@ -9,12 +9,12 @@ body {
 }
 
 #controller {
-	position: relative;
+	position: fixed;
 	-webkit-box-align:center;
 	-webkit-box-pack:center;
 	display:-webkit-box;
 	margin: 200px 0px;
-	width: 90%;
+	width: 100%;
 }
 
 #start {
@@ -93,6 +93,57 @@ body {
 	top: 35px;
 	width: 100px;
 }
+#b {
+	position: relative;
+	top: 25px;
+	left: 20px;
+	width: 25px;
+	height: 25px;
+	background-color: #f4002e;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 20px;
+}
+#c-stick {
+	position: relative;
+	top: 70px;
+	left: -125px;
+	width: 30px;
+	height: 30px;
+	background-color: #fee02b;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 20px;
+}
+#c-octagon {
+	position: relative;
+	top: 70px;
+	left: -60px;
+	width: 100px; 
+	height: 100px; 
+	background: #fdb91f;
+	transform: perspective(999px) scale(0.4) rotate(22.5deg);
+}
+#c-octagon:before {
+	height: 0;
+	width: 40px;
+	content:"";
+	position: absolute; 
+	border-bottom: 30px solid #fdb91f;
+	border-left: 30px solid #48509f; 
+	border-right: 30px solid #48509f; 
+}
+#c-octagon:after {
+	height: 0;
+	width: 40px;
+	content:"";
+	position: absolute; 
+	border-top: 30px solid #fdb91f; 
+	border-left: 30px solid #48509f;  
+	border-right: 30px solid #48509f; 
+	margin: 70px 0 0 0;
+}
+
 </style>
 <body>
 	<div id="controller">
@@ -101,6 +152,9 @@ body {
 		<div id="control-stick"></div>
 		<div id="start"></div>
 		<div id="a"></div>
+		<div id="b"></div>
+		<div id="c-octagon"></div>
+		<div id="c-stick"></div>
 	</div>
 
 </body>

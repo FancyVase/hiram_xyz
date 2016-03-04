@@ -272,17 +272,6 @@ hr.dark {
 	border-top: 1px solid rgba(50,50,50,1);
 }
 
-@media (max-width: 900px) {
-	.one-third.column {
-		width: 100%;
-		float: left;
-		margin: 10px 0px;
-	}
-	.section {
-		padding: 25px 0px;
-	}
-}
-
 .more {
 	text-align: center;
 }
@@ -302,4 +291,30 @@ hr.dark {
 .more-link:hover {
 	color: #F3F3F3;
 	background-color: #76608A;
+}
+
+.footer {
+	background-color: #000;
+	color: #fff;
+	font-weight: 300;
+	text-align: right;
+	padding: 15px 40px;
+}
+
+@media (max-width: 800px) {
+	.one-third.column {
+		width: 100%;
+		float: left;
+		margin: 10px 0px;
+	}
+	.section {
+		padding: 25px 0px 60px 0px;
+	}
+	.more-link {
+		color: #fff;
+		background-color: #76608A;
+	}
+	.more-link-dark {
+		background-color: #76608A;
+	}
 }

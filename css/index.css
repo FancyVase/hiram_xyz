@@ -13,7 +13,7 @@ h1 {
 	margin: 0px;
 }
 
-.nav {
+.nav-up {
 	z-index: 10;
 	padding: 20px 0px;
 	color: white;
@@ -297,8 +297,35 @@ hr.dark {
 	background-color: #000;
 	color: #fff;
 	font-weight: 300;
-	text-align: right;
-	padding: 15px 40px;
+	text-align: center;
+	padding: 45px 0px;
+}
+
+.links {
+	margin-bottom: 30px;
+}
+
+.footer>a {
+	color: #fff;
+	text-decoration: underline;
+	transition: 0.25s;
+}
+
+.footer>a:hover {
+	color: #76608A;
+}
+
+.links>span>a {
+	color: #fff;
+	transition: 0.25s;
+}
+
+.links>span>a:hover {
+	color: #76608A;
+}
+
+span + span {
+	margin-left: 20px;
 }
 
 @media (max-width: 800px) {
